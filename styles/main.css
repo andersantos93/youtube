@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 10px;
+  align-items: center;
+  padding: 0 16px;
+}
+
+#start {
+  display: flex;
+  justify-content: start;
+}
+
+#logo {
+  width: 93px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#center {
+  display: flex;
+  flex: 0 1 732px;
+  min-width: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#search {
+  display: flex;
+  margin: 0 0 0 40px;
+  padding: 0 4px;
+  flex: 1;
+}
+
+#search button {
+  border: 1px solid #d3d3d3;
+  border-radius: 0 40px 40px 0;
+  background-color: #f8f8f8;
+  width: 64px;
+}
+
+#mic {
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  padding: 8px;
+  margin-left: 12px;
+}
+
+#end {
+  display: flex;
+  flex-direction: row;
+  min-width: 225px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+#create-video {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100px;
+  height: 36px;
+  border-radius: 20px;
+  position: relative;
+  font-weight: 500;
+  font-size: 14.5px;
+}
+
+#create-video > svg {
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+#create-video > span {
+  position: absolute;
+  margin-top: 9px;
+  margin-left: 40px;
+}
+
+#avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+#menu,
+#logo,
+#mic,
+#create-video,
+#alert-btn,
+#avatar {
+  cursor: pointer;
+}
+
+#menu,
+#logo,
+#search,
+#mic-btn,
+#create-video,
+#alert-btn,
+#avatar {
+  align-self: center;
+}
+
+#search input {
+  height: 40px;
+  border: 1px solid #c6c6c6;
+  border-right: none;
+  border-radius: 40px 0 0 40px;
+  padding: 0 4px 0 16px;
+}
+
+#search input:focus {
+  border-color: #1c62b9;
+}
